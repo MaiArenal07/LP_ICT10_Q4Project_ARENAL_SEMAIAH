@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Ruby - Videos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            min-height: 100vh;
+            background-color: #FFF5F5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        h1 {
+            color: #4A4A4A;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            padding: 1rem 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .video-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(255, 107, 107, 0.2);
+        }
+        .video-player {
+            width: 100%;
+            height: 250px;
+            border-radius: 12px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid #FF6B6B;
+            background: #000;
+        }
+        .video-name {
+            color: #4A4A4A;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .video-caption {
+            color: #FF6B6B;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        .featured-video {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+        }
+        .featured-video-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+        .featured-video-player {
+            width: 100%;
+            max-width: 750px;
+            height: 450px;
+            border-radius: 16px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 5px solid #FF6B6B;
+            background: #000;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .featured-video-name {
+            color: #4A4A4A;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        nav {
+            background: linear-gradient(135deg, #FF6B6B, #FF8E8E);
+            padding: 1rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(255, 107, 107, 0.3);
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .nav-brand {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 10px;
+            margin-left: auto;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s;
+            white-space: nowrap;
+            font-weight: 500;
+        }
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-1px);
+        }
+        .nav-links a.active {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <span class="nav-brand">10 Ruby</span>
+            <div class="nav-links">
+                <a href="classmates.html">Classmates</a>
+                <a href="attendance.html">Attendance Tracker</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="videos.html" class="active">Videos</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>🎬 10 Ruby Videos 🎬</h1>
+        <p class="subtitle">Ruby's highlights in motion</p>
+        
+        <div class="video-grid">
+            <!-- Video 2 -->
+            <div class="video-card">
+                <video class="video-player" controls>
+                    <source src="pio.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-name">Pio and Gelo</div>
+                <div class="video-caption">THEIR FIRST KISS!!!</div>
+            </div>
+ 
+            <!-- Video 4 -->
+            <div class="video-card">
+                <video class="video-player" controls>
+                    <source src="nikolo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-name">Aaron during music</div>
+                <div class="video-caption">Daming fan boys</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
